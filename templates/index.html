@@ -9,7 +9,10 @@
 <body>
     <header class="header">
         Fruit360 Classification App
+        
     </header>
+    <p>This model is trained to predict the following types of fruit: <br>
+        <b>apple_6, apple_braeburn_1, pear_3, cucumber_1</b> </p>
 
     <form action="/upload" method="post" enctype="multipart/form-data" class="form">
         <label class="label" for="file_input">Upload file</label>
@@ -19,8 +22,31 @@
 
     <div class="predicted">
         {% if predicted %}
-        <p> {{ predicted }} </p>
+        <p>The fruit is: {{ predicted }} </p>
         {% endif %}
-    </div>
+
+        {% if image %}
+        <img src="data:image/jpeg;base64,{{ image }}" width="300">
+        {% endif %}
+
+
+    
+</div>
+    <script>
+        function updateButton() {
+            const fileInput = document.getElementById('file_input');
+            const submitButton = document.getElementById('submit_button');
+            submitButton.disabled = !fileInput.value;
+        }
+
+        function validateForm() {
+            const fileInput = document.getElementById('file_input');
+            if (!fileInput.value) {
+                alert("Please upload an image.");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </body>
 </html>

@@ -18,6 +18,13 @@ body{
   
   }
   
+b{
+  color: blueviolet;
+}
+  p{
+    text-align: center;
+    color: #fff;
+  }
   /* Form styles */
   .form {
     max-width: 400px;
