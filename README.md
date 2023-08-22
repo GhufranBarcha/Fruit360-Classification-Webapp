@@ -7,4 +7,4 @@
  - cucumber_1
 
 ## Below is website Img
-![404]([https://raw.githubusercontent.com/GhufranBarcha/iris-classification-webapp/main/websiteImg/predictImg.PNG](https://raw.githubusercontent.com/GhufranBarcha/Fruit360-Classification-Webapp/main/Website-img/predicted.PNG)https://raw.githubusercontent.com/GhufranBarcha/Fruit360-Classification-Webapp/main/Website-img/predicted.PNG)
+![404](https://raw.githubusercontent.com/GhufranBarcha/Fruit360-Classification-Webapp/main/Website-img/predicted.PNG)
