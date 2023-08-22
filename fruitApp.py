@@ -22,12 +22,12 @@ def upload():
         img = request.files["image"]
         print(img)  # Print the uploaded image object
         pass
-    return render_template("index.html", predicted="predicted~")
+        return render_template("index.html", predicted="predicted~")
 
 
 
 
-    return  render_template("index.html" , predicted = "predicted~")
+    return  render_template("index.html" , predicted = "Error")
 
 
 if __name__ == "__main__":
