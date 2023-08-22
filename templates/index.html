@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit360 Classification App</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <header class="header">
+        Fruit360 Classification App
+    </header>
+
+    <form action="/upload" method="post" enctype="multipart/form-data" class="form">
+        <label class="label" for="file_input">Upload file</label>
+        <input class="input" id="file_input" type="file" name="image" accept="image/*">
+        <button class="upload-button" type="submit">Predict Image</button>
+    </form>
+
+    <div>
+        {% if predicted %}
+        <p> {{ predicted }} </p>
+        {% endif %}
+    </div>
+</body>
+</html>
